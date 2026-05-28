@@ -1,0 +1,131 @@
+{
+  "app": {
+    "title": "工作配对",
+    "subtitle": "新加坡蓝领人才与雇主智能匹配平台",
+    "tagline": "简单提交，智能匹配，快速上岗"
+  },
+  "nav": {
+    "home": "首页",
+    "findJob": "找工作",
+    "hire": "找人才",
+    "matches": "匹配结果"
+  },
+  "home": {
+    "heroTitle": "找工作？招人才？",
+    "heroSubtitle": "无需复杂简历，简单填写信息，平台智能为您匹配",
+    "seekerBtn": "我要找工作",
+    "employerBtn": "我要招人",
+    "howItWorks": "如何使用",
+    "step1": "填写基本信息",
+    "step1Desc": "姓名、技能、期望薪资",
+    "step2": "智能匹配",
+    "step2Desc": "平台自动为您寻找最佳匹配",
+    "step3": "获取结果",
+    "step3Desc": "查看匹配的工作或人才"
+  },
+  "seeker": {
+    "title": "求职登记",
+    "subtitle": "填写您的基本信息，我们为您匹配合适的工作",
+    "name": "姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "phone": "联系电话",
+    "phonePlaceholder": "请输入电话号码",
+    "wechat": "微信号",
+    "wechatPlaceholder": "请输入微信号（选填）",
+    "industry": "行业类别",
+    "industryPlaceholder": "请选择行业",
+    "skills": "技能特长",
+    "skillsPlaceholder": "输入技能后按回车添加",
+    "experience": "工作经验",
+    "experienceYears": "年",
+    "location": "期望工作区域",
+    "locationPlaceholder": "请选择区域",
+    "salaryMin": "期望最低月薪 (SGD)",
+    "salaryMax": "期望最高月薪 (SGD)",
+    "availability": "可到岗时间",
+    "bio": "自我介绍",
+    "bioPlaceholder": "简单介绍您的工作经历和优势（选填）",
+    "submit": "提交求职信息",
+    "success": "提交成功！",
+    "successMsg": "您的求职信息已登记，系统正在为您匹配合适的工作。"
+  },
+  "employer": {
+    "title": "招聘登记",
+    "subtitle": "填写您的招聘需求，我们为您匹配合适的人才",
+    "companyName": "公司/店铺名称",
+    "companyPlaceholder": "请输入公司或店铺名称",
+    "contactName": "联系人",
+    "contactPlaceholder": "请输入联系人姓名",
+    "phone": "联系电话",
+    "phonePlaceholder": "请输入电话号码",
+    "wechat": "微信号",
+    "wechatPlaceholder": "请输入微信号（选填）",
+    "industry": "行业类别",
+    "industryPlaceholder": "请选择行业",
+    "jobTitle": "职位名称",
+    "jobTitlePlaceholder": "请输入职位名称",
+    "jobDescription": "职位描述",
+    "jobDescPlaceholder": "请描述工作内容和要求",
+    "skills": "要求技能",
+    "skillsPlaceholder": "输入要求技能后按回车添加",
+    "location": "工作地点",
+    "locationPlaceholder": "请选择区域",
+    "budgetMin": "预算最低月薪 (SGD)",
+    "budgetMax": "预算最高月薪 (SGD)",
+    "urgency": "紧急程度",
+    "submit": "提交招聘需求",
+    "success": "提交成功！",
+    "successMsg": "您的招聘需求已登记，系统正在为您匹配合适的人才。"
+  },
+  "matches": {
+    "title": "匹配结果",
+    "subtitle": "以下是为您推荐的最佳匹配",
+    "score": "匹配度",
+    "industry": "行业",
+    "skills": "技能",
+    "salary": "薪资范围",
+    "contact": "联系方式",
+    "noMatches": "暂无匹配结果，请稍后再来查看。",
+    "viewAll": "查看全部"
+  },
+  "industries": {
+    "fnb": "餐饮",
+    "cleaning": "清洁",
+    "construction": "建筑",
+    "retail": "零售",
+    "logistics": "物流",
+    "childcare": "育儿/看护",
+    "beauty": "美容美发",
+    "security": "保安",
+    "driver": "司机",
+    "other": "其他"
+  },
+  "locations": {
+    "central": "中部",
+    "north": "北部",
+    "south": "南部",
+    "east": "东部",
+    "west": "西部",
+    "any": "不限"
+  },
+  "availability": {
+    "immediate": "立即到岗",
+    "oneWeek": "一周内",
+    "twoWeeks": "两周内",
+    "oneMonth": "一个月内"
+  },
+  "urgency": {
+    "immediate": "立即",
+    "oneWeek": "一周内",
+    "oneMonth": "一个月内",
+    "flexible": "不着急"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出错了，请稍后再试",
+    "required": "必填",
+    "optional": "选填",
+    "back": "返回",
+    "language": "English"
+  }
+}

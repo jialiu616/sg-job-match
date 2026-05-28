@@ -1,0 +1,131 @@
+{
+  "app": {
+    "title": "Job Match",
+    "subtitle": "Smart matching platform for workers and employers in Singapore",
+    "tagline": "Simple submission, smart matching, quick employment"
+  },
+  "nav": {
+    "home": "Home",
+    "findJob": "Find Job",
+    "hire": "Hire",
+    "matches": "Matches"
+  },
+  "home": {
+    "heroTitle": "Looking for work? Hiring?",
+    "heroSubtitle": "No complex resume needed. Simple info, smart matching.",
+    "seekerBtn": "I'm looking for work",
+    "employerBtn": "I'm hiring",
+    "howItWorks": "How It Works",
+    "step1": "Fill in basic info",
+    "step1Desc": "Name, skills, expected salary",
+    "step2": "Smart matching",
+    "step2Desc": "Platform finds your best matches",
+    "step3": "Get results",
+    "step3Desc": "View matched jobs or candidates"
+  },
+  "seeker": {
+    "title": "Job Seeker Registration",
+    "subtitle": "Fill in your basic info. We'll match you with suitable jobs.",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "wechat": "WeChat ID",
+    "wechatPlaceholder": "Enter WeChat ID (optional)",
+    "industry": "Industry",
+    "industryPlaceholder": "Select industry",
+    "skills": "Skills",
+    "skillsPlaceholder": "Type a skill and press Enter",
+    "experience": "Experience",
+    "experienceYears": "years",
+    "location": "Preferred Work Area",
+    "locationPlaceholder": "Select area",
+    "salaryMin": "Min Expected Salary (SGD/month)",
+    "salaryMax": "Max Expected Salary (SGD/month)",
+    "availability": "Availability",
+    "bio": "About Me",
+    "bioPlaceholder": "Brief intro about your experience (optional)",
+    "submit": "Submit",
+    "success": "Submitted!",
+    "successMsg": "Your profile is registered. We're finding matches for you."
+  },
+  "employer": {
+    "title": "Employer Registration",
+    "subtitle": "Fill in your hiring needs. We'll match you with suitable candidates.",
+    "companyName": "Company/Shop Name",
+    "companyPlaceholder": "Enter company or shop name",
+    "contactName": "Contact Person",
+    "contactPlaceholder": "Enter contact name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "wechat": "WeChat ID",
+    "wechatPlaceholder": "Enter WeChat ID (optional)",
+    "industry": "Industry",
+    "industryPlaceholder": "Select industry",
+    "jobTitle": "Job Title",
+    "jobTitlePlaceholder": "Enter job title",
+    "jobDescription": "Job Description",
+    "jobDescPlaceholder": "Describe the job and requirements",
+    "skills": "Required Skills",
+    "skillsPlaceholder": "Type a skill and press Enter",
+    "location": "Work Location",
+    "locationPlaceholder": "Select area",
+    "budgetMin": "Min Budget (SGD/month)",
+    "budgetMax": "Max Budget (SGD/month)",
+    "urgency": "Urgency",
+    "submit": "Submit",
+    "success": "Submitted!",
+    "successMsg": "Your hiring need is registered. We're finding matches for you."
+  },
+  "matches": {
+    "title": "Match Results",
+    "subtitle": "Here are your best matches",
+    "score": "Match Score",
+    "industry": "Industry",
+    "skills": "Skills",
+    "salary": "Salary Range",
+    "contact": "Contact",
+    "noMatches": "No matches yet. Please check back later.",
+    "viewAll": "View All"
+  },
+  "industries": {
+    "fnb": "F&B",
+    "cleaning": "Cleaning",
+    "construction": "Construction",
+    "retail": "Retail",
+    "logistics": "Logistics",
+    "childcare": "Childcare",
+    "beauty": "Beauty",
+    "security": "Security",
+    "driver": "Driver",
+    "other": "Other"
+  },
+  "locations": {
+    "central": "Central",
+    "north": "North",
+    "south": "South",
+    "east": "East",
+    "west": "West",
+    "any": "Any"
+  },
+  "availability": {
+    "immediate": "Immediately",
+    "oneWeek": "Within 1 week",
+    "twoWeeks": "Within 2 weeks",
+    "oneMonth": "Within 1 month"
+  },
+  "urgency": {
+    "immediate": "Immediately",
+    "oneWeek": "Within 1 week",
+    "oneMonth": "Within 1 month",
+    "flexible": "Flexible"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "required": "Required",
+    "optional": "Optional",
+    "back": "Back",
+    "language": "中文"
+  }
+}
