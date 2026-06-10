@@ -36,6 +36,9 @@ function validateSeekerPayload(body: unknown): { ok: true; data: Omit<JobSeeker,
     expected_salary_max: Number(b.expected_salary_max),
     availability: b.availability as JobSeeker['availability'],
     bio: b.bio ? String(b.bio) : undefined,
+    source_url: b.source_url ? String(b.source_url) : '',
+    source_platform: b.source_platform ? String(b.source_platform) : 'direct',
+    posted_at: b.posted_at ? String(b.posted_at) : new Date().toISOString(),
   };
   return { ok: true, data };
 }

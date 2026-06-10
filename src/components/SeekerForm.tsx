@@ -1,9 +1,9 @@
-import { useState, type FormEvent, type KeyboardEvent } from 'react';
+import { useEffect, useState, type FormEvent, type KeyboardEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import type { Industry, Location, Availability } from '../lib/types';
+import type { Industry, Location, Availability, Employer } from '../lib/types';
 import { matchSeekerToEmployers } from '../lib/matching';
-import { mockEmployers } from '../lib/mockData';
+import { loadEmployers } from '../lib/dataLoader';
 import { useAppContext } from '../context/AppContext';
 
 const INDUSTRIES: Industry[] = ['fnb', 'cleaning', 'construction', 'retail', 'logistics', 'childcare', 'beauty', 'security', 'driver', 'other'];
@@ -34,6 +34,17 @@ export function SeekerForm() {
   const [availability, setAvailability] = useState<Availability | ''>('');
   const [bio, setBio] = useState('');
   const [errors, setErrors] = useState<Record<string, boolean>>({});
+  const [employers, setEmployers] = useState<Employer[] | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    loadEmployers().then((data) => {
+      if (active) setEmployers(data);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const handleSkillKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -82,10 +93,14 @@ export function SeekerForm() {
       availability: availability as Availability,
       bio: bio.trim() || undefined,
       created_at: new Date().toISOString(),
+      source_url: '',
+      source_platform: 'direct',
+      posted_at: new Date().toISOString(),
     };
 
-    // Use matching engine with mock data for demo
-    const results = matchSeekerToEmployers(seekerData, mockEmployers);
+    // Use matching engine with loaded employer data (real or fallback).
+    const dataset = employers ?? [];
+    const results = matchSeekerToEmployers(seekerData, dataset);
     setRole('seeker');
     setSeekerData(seekerData);
     setMatchResults(results);
@@ -100,6 +115,17 @@ export function SeekerForm() {
     }`;
 
   const labelClass = 'block text-lg font-medium text-gray-900 mb-1.5';
+
+  if (employers === null) {
+    return (
+      <div className="flex items-center justify-center py-20" role="status" aria-live="polite">
+        <div className="flex items-center gap-3 text-gray-500">
+          <span className="w-5 h-5 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+          <span className="text-base">{t('common.loading')}</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">

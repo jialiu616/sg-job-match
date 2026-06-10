@@ -16,6 +16,7 @@ export function Layout({ children }: LayoutProps) {
     { to: '/', label: t('nav.home') },
     { to: '/seeker', label: t('nav.findJob') },
     { to: '/employer', label: t('nav.hire') },
+    { to: '/browse', label: t('nav.browse') },
     { to: '/matches', label: t('nav.matches') },
   ];
 

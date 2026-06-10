@@ -17,6 +17,9 @@ export interface JobSeeker {
   availability: Availability;
   bio?: string;
   created_at?: string;
+  source_url: string;
+  source_platform: string;
+  posted_at: string;
 }
 
 export interface Employer {
@@ -34,6 +37,41 @@ export interface Employer {
   budget_max: number;
   urgency: Urgency;
   created_at?: string;
+  source_url: string;
+  source_platform: string;
+  posted_at: string;
+}
+
+export interface ScrapedListing {
+  id: string;
+  title: string;
+  industry: Industry;
+  tags: string[];
+  contact: string;
+  contact_type: 'whatsapp' | 'phone' | 'sms';
+  source_url: string;
+  source_platform: string;
+  posted_at: string;
+  scraped_at: string;
+  type: 'employer' | 'seeker';
+  // Employer-specific
+  company_name?: string;
+  job_title?: string;
+  job_description?: string;
+  required_skills?: string[];
+  location?: Location;
+  budget_min?: number;
+  budget_max?: number;
+  urgency?: Urgency;
+  // Seeker-specific
+  name?: string;
+  skills?: string[];
+  experience_years?: number;
+  location_preference?: Location;
+  expected_salary_min?: number;
+  expected_salary_max?: number;
+  availability?: Availability;
+  bio?: string;
 }
 
 export interface Match {

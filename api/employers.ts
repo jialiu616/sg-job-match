@@ -41,6 +41,9 @@ function validateEmployerPayload(body: unknown): { ok: true; data: Omit<Employer
     budget_min: Number(b.budget_min),
     budget_max: Number(b.budget_max),
     urgency: b.urgency as Employer['urgency'],
+    source_url: b.source_url ? String(b.source_url) : '',
+    source_platform: b.source_platform ? String(b.source_platform) : 'direct',
+    posted_at: b.posted_at ? String(b.posted_at) : new Date().toISOString(),
   };
   return { ok: true, data };
 }

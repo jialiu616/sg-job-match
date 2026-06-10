@@ -1,5 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import type { JobSeeker, Employer } from '../lib/types';
+import {
+  freshnessFor,
+  relativeTime,
+  FRESHNESS_DOT,
+  FRESHNESS_PILL,
+} from '../lib/freshness';
 
 interface MatchCardProps {
   score: number;
@@ -13,12 +19,12 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
 
   // If role is seeker, we show employer info (the match); if employer, show seeker info
   const isShowingEmployer = role === 'seeker';
+  const subject = isShowingEmployer ? employer : seeker;
+
   const name = isShowingEmployer
     ? employer?.company_name ?? ''
     : seeker?.name ?? '';
-  const industry = isShowingEmployer
-    ? employer?.industry
-    : seeker?.industry;
+  const industry = isShowingEmployer ? employer?.industry : seeker?.industry;
   const skills = isShowingEmployer
     ? employer?.required_skills ?? []
     : seeker?.skills ?? [];
@@ -27,6 +33,11 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
   const phone = isShowingEmployer ? employer?.phone : seeker?.phone;
   const wechat = isShowingEmployer ? employer?.wechat : seeker?.wechat;
   const subtitle = isShowingEmployer ? employer?.job_title : seeker?.bio;
+
+  const sourceUrl = subject?.source_url;
+  const postedAt = subject?.posted_at;
+  const freshness = freshnessFor(postedAt);
+  const relTime = relativeTime(postedAt, t);
 
   const scoreColor =
     score >= 70 ? 'text-green-600' : score >= 40 ? 'text-yellow-600' : 'text-red-500';
@@ -57,13 +68,25 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
         />
       </div>
 
-      {/* Industry badge */}
-      {industry && (
-        <div className="mb-3">
-          <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.industry')}:</span>
-          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">
-            {t(`industries.${industry}`)}
-          </span>
+      {/* Industry + Freshness row */}
+      {(industry || postedAt) && (
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          {industry && (
+            <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-1 rounded-full">
+              {t(`industries.${industry}`)}
+            </span>
+          )}
+          {postedAt && (
+            <span
+              className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${FRESHNESS_PILL[freshness]}`}
+            >
+              <span className={`w-2 h-2 rounded-full ${FRESHNESS_DOT[freshness]}`} />
+              {t(`listing.${freshness}`)}
+            </span>
+          )}
+          {relTime && (
+            <span className="text-xs text-gray-400">· {relTime}</span>
+          )}
         </div>
       )}
 
@@ -88,7 +111,7 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
       )}
 
       {/* Salary range */}
-      {salaryMin != null && salaryMax != null && (
+      {salaryMin != null && salaryMax != null && (salaryMin > 0 || salaryMax > 0) && (
         <div className="mb-3">
           <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.salary')}:</span>
           <span className="text-sm font-semibold text-gray-900">
@@ -98,11 +121,32 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
       )}
 
       {/* Contact */}
-      <div className="pt-3 border-t border-gray-100">
-        <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.contact')}:</span>
-        <span className="text-sm text-gray-800">📞 {phone}</span>
-        {wechat && (
-          <span className="text-sm text-gray-800 ml-3">💬 {wechat}</span>
+      <div className="pt-3 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.contact')}:</span>
+          <span className="text-sm text-gray-800">📞 {phone}</span>
+          {wechat && (
+            <span className="text-sm text-gray-800 ml-3">💬 {wechat}</span>
+          )}
+        </div>
+        {sourceUrl && (
+          <a
+            href={sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline"
+          >
+            {t('listing.viewOriginal')}
+            <svg
+              className="w-3.5 h-3.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         )}
       </div>
     </div>

@@ -8,6 +8,7 @@
     "home": "Home",
     "findJob": "Find Job",
     "hire": "Hire",
+    "browse": "Browse",
     "matches": "Matches"
   },
   "home": {
@@ -127,5 +128,26 @@
     "optional": "Optional",
     "back": "Back",
     "language": "中文"
+  },
+  "listing": {
+    "source": "Source",
+    "postedAt": "Posted",
+    "viewOriginal": "View Original",
+    "fresh": "New",
+    "thisWeek": "This week",
+    "older": "Older",
+    "daysAgo": "{{count}} days ago",
+    "hoursAgo": "{{count}} hours ago",
+    "minutesAgo": "{{count}} min ago",
+    "browse": "Browse Listings",
+    "browseSubtitle": "All listings are from real forum posts. Click to view the original.",
+    "filterByIndustry": "Filter by industry",
+    "filterByType": "Filter by type",
+    "allTypes": "All",
+    "employers": "Hiring",
+    "seekers": "Job Seekers",
+    "totalListings": "{{count}} listings total",
+    "lastUpdated": "Last updated",
+    "noData": "No data available. Please try again later."
   }
 }

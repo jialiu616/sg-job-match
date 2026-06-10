@@ -1,5 +1,7 @@
 import type { JobSeeker, Employer } from './types';
 
+const now = new Date().toISOString();
+
 export const mockSeekers: JobSeeker[] = [
   {
     id: 'seeker-1',
@@ -14,7 +16,10 @@ export const mockSeekers: JobSeeker[] = [
     expected_salary_max: 3500,
     availability: 'immediate',
     bio: '5年餐饮经验，擅长中餐烹饪',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'seeker-2',
@@ -27,7 +32,10 @@ export const mockSeekers: JobSeeker[] = [
     expected_salary_min: 1800,
     expected_salary_max: 2500,
     availability: 'oneWeek',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'seeker-3',
@@ -42,7 +50,10 @@ export const mockSeekers: JobSeeker[] = [
     expected_salary_max: 4000,
     availability: 'twoWeeks',
     bio: '持有3号驾照，有叉车证',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'seeker-4',
@@ -55,7 +66,10 @@ export const mockSeekers: JobSeeker[] = [
     expected_salary_min: 3500,
     expected_salary_max: 5000,
     availability: 'immediate',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'seeker-5',
@@ -70,7 +84,10 @@ export const mockSeekers: JobSeeker[] = [
     expected_salary_max: 2800,
     availability: 'oneWeek',
     bio: '中英文流利，擅长客户服务',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
 ];
 
@@ -89,7 +106,10 @@ export const mockEmployers: Employer[] = [
     budget_min: 2800,
     budget_max: 3800,
     urgency: 'oneWeek',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'employer-2',
@@ -104,7 +124,10 @@ export const mockEmployers: Employer[] = [
     budget_min: 1800,
     budget_max: 2600,
     urgency: 'immediate',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'employer-3',
@@ -119,7 +142,10 @@ export const mockEmployers: Employer[] = [
     budget_min: 3200,
     budget_max: 4200,
     urgency: 'oneMonth',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'employer-4',
@@ -135,7 +161,10 @@ export const mockEmployers: Employer[] = [
     budget_min: 3800,
     budget_max: 5500,
     urgency: 'immediate',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
   {
     id: 'employer-5',
@@ -150,6 +179,9 @@ export const mockEmployers: Employer[] = [
     budget_min: 2200,
     budget_max: 3000,
     urgency: 'oneWeek',
-    created_at: new Date().toISOString(),
+    created_at: now,
+    source_url: '',
+    source_platform: 'direct',
+    posted_at: now,
   },
 ];

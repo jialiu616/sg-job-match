@@ -1,9 +1,9 @@
-import { useState, type FormEvent, type KeyboardEvent } from 'react';
+import { useEffect, useState, type FormEvent, type KeyboardEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import type { Industry, Location, Urgency } from '../lib/types';
+import type { Industry, Location, Urgency, JobSeeker } from '../lib/types';
 import { matchEmployerToSeekers } from '../lib/matching';
-import { mockSeekers } from '../lib/mockData';
+import { loadSeekers } from '../lib/dataLoader';
 import { useAppContext } from '../context/AppContext';
 
 const INDUSTRIES: Industry[] = ['fnb', 'cleaning', 'construction', 'retail', 'logistics', 'childcare', 'beauty', 'security', 'driver', 'other'];
@@ -29,6 +29,17 @@ export function EmployerForm() {
   const [budgetMax, setBudgetMax] = useState('');
   const [urgency, setUrgency] = useState<Urgency | ''>('');
   const [errors, setErrors] = useState<Record<string, boolean>>({});
+  const [seekers, setSeekers] = useState<JobSeeker[] | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    loadSeekers().then((data) => {
+      if (active) setSeekers(data);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const handleSkillKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -80,10 +91,14 @@ export function EmployerForm() {
       budget_max: Number(budgetMax),
       urgency: urgency as Urgency,
       created_at: new Date().toISOString(),
+      source_url: '',
+      source_platform: 'direct',
+      posted_at: new Date().toISOString(),
     };
 
-    // Use matching engine with mock data for demo
-    const results = matchEmployerToSeekers(employerData, mockSeekers);
+    // Use matching engine with loaded seeker data (real or fallback).
+    const dataset = seekers ?? [];
+    const results = matchEmployerToSeekers(employerData, dataset);
     setRole('employer');
     setEmployerData(employerData);
     setMatchResults(results);
@@ -98,6 +113,17 @@ export function EmployerForm() {
     }`;
 
   const labelClass = 'block text-lg font-medium text-gray-900 mb-1.5';
+
+  if (seekers === null) {
+    return (
+      <div className="flex items-center justify-center py-20" role="status" aria-live="polite">
+        <div className="flex items-center gap-3 text-gray-500">
+          <span className="w-5 h-5 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+          <span className="text-base">{t('common.loading')}</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">

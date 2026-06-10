@@ -8,6 +8,7 @@
     "home": "首页",
     "findJob": "找工作",
     "hire": "找人才",
+    "browse": "浏览信息",
     "matches": "匹配结果"
   },
   "home": {
@@ -127,5 +128,26 @@
     "optional": "选填",
     "back": "返回",
     "language": "English"
+  },
+  "listing": {
+    "source": "来源",
+    "postedAt": "发布时间",
+    "viewOriginal": "查看原帖",
+    "fresh": "最新",
+    "thisWeek": "本周",
+    "older": "较早",
+    "daysAgo": "{{count}}天前",
+    "hoursAgo": "{{count}}小时前",
+    "minutesAgo": "{{count}}分钟前",
+    "browse": "浏览招工信息",
+    "browseSubtitle": "以下信息均来自真实论坛帖子，点击可查看原帖",
+    "filterByIndustry": "按行业筛选",
+    "filterByType": "按类型筛选",
+    "allTypes": "全部",
+    "employers": "招工信息",
+    "seekers": "求职信息",
+    "totalListings": "共 {{count}} 条信息",
+    "lastUpdated": "数据更新时间",
+    "noData": "暂无数据，请稍后再试"
   }
 }
