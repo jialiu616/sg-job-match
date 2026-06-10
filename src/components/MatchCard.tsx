@@ -123,10 +123,18 @@ export function MatchCard({ score, seeker, employer, role }: MatchCardProps) {
       {/* Contact */}
       <div className="pt-3 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.contact')}:</span>
-          <span className="text-sm text-gray-800">📞 {phone}</span>
-          {wechat && (
-            <span className="text-sm text-gray-800 ml-3">💬 {wechat}</span>
+          {phone ? (
+            <>
+              <span className="text-xs font-medium text-gray-500 mr-2">{t('matches.contact')}:</span>
+              <span className="text-sm text-gray-800">📞 {phone}</span>
+              {wechat && (
+                <span className="text-sm text-gray-800 ml-3">💬 {wechat}</span>
+              )}
+            </>
+          ) : (
+            <span className="text-sm text-gray-400 italic">
+              {t('listing.contactInOriginal')}
+            </span>
           )}
         </div>
         {sourceUrl && (

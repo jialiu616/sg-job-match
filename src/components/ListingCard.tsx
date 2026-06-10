@@ -114,9 +114,15 @@ export function ListingCard({ listing }: ListingCardProps) {
 
       {/* Contact */}
       <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between gap-3 flex-wrap">
-        <span className="text-sm text-gray-800 font-medium">
-          {contactIcon(listing.contact_type)} {listing.contact}
-        </span>
+        {listing.contact ? (
+          <span className="text-sm text-gray-800 font-medium">
+            {contactIcon(listing.contact_type)} {listing.contact}
+          </span>
+        ) : (
+          <span className="text-sm text-gray-400 italic">
+            {t('listing.contactInOriginal')}
+          </span>
+        )}
         {listing.source_url && (
           <a
             href={listing.source_url}
