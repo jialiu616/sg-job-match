@@ -2,12 +2,10 @@ import type {
   JobSeeker,
   Employer,
   ScrapedListing,
-  Industry,
   Location,
   Availability,
   Urgency,
 } from './types';
-import { mockEmployers, mockSeekers } from './mockData';
 
 export interface ScrapedDataset {
   scraped_at: string;
@@ -104,7 +102,7 @@ export async function loadEmployers(): Promise<Employer[]> {
     employersPromise = (async () => {
       const dataset = await fetchDataset('employers.json');
       if (!dataset || dataset.listings.length === 0) {
-        return mockEmployers;
+        return [];
       }
       employersDatasetCache = dataset;
       const employerListings = dataset.listings.filter((l) => l.type === 'employer');
@@ -119,7 +117,7 @@ export async function loadSeekers(): Promise<JobSeeker[]> {
     seekersPromise = (async () => {
       const dataset = await fetchDataset('seekers.json');
       if (!dataset || dataset.listings.length === 0) {
-        return mockSeekers;
+        return [];
       }
       seekersDatasetCache = dataset;
       const seekerListings = dataset.listings.filter((l) => l.type === 'seeker');
@@ -127,54 +125,6 @@ export async function loadSeekers(): Promise<JobSeeker[]> {
     })();
   }
   return seekersPromise;
-}
-
-function mockEmployerToListing(e: Employer): ScrapedListing {
-  return {
-    id: e.id ?? `mock-emp-${e.company_name}`,
-    title: e.job_title,
-    industry: e.industry as Industry,
-    tags: e.required_skills,
-    contact: e.phone,
-    contact_type: 'phone',
-    source_url: e.source_url || '',
-    source_platform: e.source_platform || 'sample',
-    posted_at: e.posted_at,
-    scraped_at: e.created_at ?? e.posted_at,
-    type: 'employer',
-    company_name: e.company_name,
-    job_title: e.job_title,
-    job_description: e.job_description,
-    required_skills: e.required_skills,
-    location: e.location,
-    budget_min: e.budget_min,
-    budget_max: e.budget_max,
-    urgency: e.urgency,
-  };
-}
-
-function mockSeekerToListing(s: JobSeeker): ScrapedListing {
-  return {
-    id: s.id ?? `mock-seeker-${s.name}`,
-    title: s.name,
-    industry: s.industry as Industry,
-    tags: s.skills,
-    contact: s.phone,
-    contact_type: 'phone',
-    source_url: s.source_url || '',
-    source_platform: s.source_platform || 'sample',
-    posted_at: s.posted_at,
-    scraped_at: s.created_at ?? s.posted_at,
-    type: 'seeker',
-    name: s.name,
-    skills: s.skills,
-    experience_years: s.experience_years,
-    location_preference: s.location_preference,
-    expected_salary_min: s.expected_salary_min,
-    expected_salary_max: s.expected_salary_max,
-    availability: s.availability,
-    bio: s.bio,
-  };
 }
 
 export async function loadAllListings(): Promise<AllListings> {
@@ -191,11 +141,11 @@ export async function loadAllListings(): Promise<AllListings> {
 
       const employers: ScrapedListing[] = empDataset
         ? empDataset.listings.filter((l) => l.type === 'employer')
-        : mockEmployers.map(mockEmployerToListing);
+        : [];
 
       const seekers: ScrapedListing[] = seekDataset
         ? seekDataset.listings.filter((l) => l.type === 'seeker')
-        : mockSeekers.map(mockSeekerToListing);
+        : [];
 
       return {
         employers,

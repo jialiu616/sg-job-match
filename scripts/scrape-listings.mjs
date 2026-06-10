@@ -72,6 +72,73 @@ function mapIndustry(tags) {
 }
 
 // ---------------------------------------------------------------------------
+// Title parsers — extract structured info from raw post titles
+// ---------------------------------------------------------------------------
+
+// Extract salary/budget from title.
+// Patterns supported: $3000, 3000+, 2900-3600, 高达3600, 薪资可达$2300-2600
+function extractSalary(title) {
+  const patterns = [
+    /\$?(\d{4,})\s*[-–~]\s*\$?(\d{4,})/, // range: 2900-3600
+    /高达\$?(\d{4,})/,                     // 高达3600
+    /薪资可达\$?(\d{4,})/,                 // 薪资可达$3000
+    /\$(\d{4,})\+?/,                      // $3000+
+    /(\d{4,})\+/,                          // 3600+
+  ];
+
+  for (const pattern of patterns) {
+    const match = title.match(pattern);
+    if (match) {
+      if (match[2]) {
+        return { min: parseInt(match[1], 10), max: parseInt(match[2], 10) };
+      }
+      const val = parseInt(match[1], 10);
+      return { min: Math.round(val * 0.8), max: val };
+    }
+  }
+  return { min: 0, max: 0 };
+}
+
+// Extract company/shop name from title using common Chinese hiring patterns.
+function extractCompanyName(title) {
+  const patterns = [
+    /^(.{2,15}?)(?:聘请|招聘|诚招|诚聘|直招|需要|招)/,
+    /^【(.+?)】/,
+    /^(.{2,10}?(?:公司|店|餐厅|餐馆|酒店|集团|门店|摊位|工厂))/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = title.match(pattern);
+    if (match && match[1] && match[1].length >= 2 && match[1].length <= 20) {
+      const generic = ['新加坡', '本地', '急', '高薪', '正规', '公司因业务发展'];
+      if (!generic.some((g) => match[1] === g)) {
+        return match[1].trim();
+      }
+    }
+  }
+  return '';
+}
+
+// Infer location from Singapore place-name keywords mentioned in the title.
+function inferLocation(title) {
+  const locationMap = {
+    '兀兰': 'north', '义顺': 'north', '三巴旺': 'north', '杨厝港': 'north',
+    '市中心': 'central', '牛车水': 'central', '乌节': 'central',
+    '多美歌': 'central', '克拉码头': 'central', '莱佛士': 'central',
+    '淡滨尼': 'east', '巴西立': 'east', '勿洛': 'east', '东海岸': 'east',
+    '裕廊': 'west', '文礼': 'west', '武吉巴督': 'west', '金文泰': 'west',
+    '黄埔': 'central', '欧南园': 'central', '淡冰尼': 'east',
+  };
+
+  for (const [keyword, location] of Object.entries(locationMap)) {
+    if (title.includes(keyword)) {
+      return location;
+    }
+  }
+  return 'any';
+}
+
+// ---------------------------------------------------------------------------
 // Relative timestamp parser
 // ---------------------------------------------------------------------------
 function parseRelativeTime(text) {
@@ -289,16 +356,20 @@ function buildListing(raw, scrapedAt) {
     type: raw.type,
   };
 
+  const salary = extractSalary(raw.title);
+  const companyName = extractCompanyName(raw.title);
+  const location = inferLocation(raw.title);
+
   if (raw.type === 'employer') {
     return {
       ...base,
-      company_name: '',
+      company_name: companyName,
       job_title: raw.title,
       job_description: raw.title,
       required_skills: raw.tags,
-      location: 'any',
-      budget_min: 0,
-      budget_max: 0,
+      location,
+      budget_min: salary.min,
+      budget_max: salary.max,
       urgency: 'flexible',
     };
   }
@@ -308,9 +379,9 @@ function buildListing(raw, scrapedAt) {
     name: '',
     skills: raw.tags,
     experience_years: 0,
-    location_preference: 'any',
-    expected_salary_min: 0,
-    expected_salary_max: 0,
+    location_preference: location,
+    expected_salary_min: salary.min,
+    expected_salary_max: salary.max,
     availability: 'immediate',
     bio: raw.title,
   };
