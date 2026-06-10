@@ -1,10 +1,23 @@
 {
-  "scraped_at": "2026-06-10T11:05:55.274Z",
-  "source": "https://www.shichengbbs.com",
-  "total_count": 61,
+  "scraped_at": "2026-06-10T11:39:10.746Z",
+  "sources": [
+    {
+      "name": "ShichengBBS",
+      "base_url": "https://www.shichengbbs.com"
+    },
+    {
+      "name": "ShichengLuntan",
+      "base_url": "https://www.shichengluntan.com"
+    },
+    {
+      "name": "ShichengBao",
+      "base_url": "https://www.shichengbao.com"
+    }
+  ],
+  "total_count": 154,
   "listings": [
     {
-      "id": "2932888",
+      "id": "ShichengBBS-2932888",
       "title": "【版规】本版块为求职板块，发布招聘信息的帖子一律删除！",
       "industry": "other",
       "tags": [],
@@ -12,8 +25,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2932888",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -25,7 +38,7 @@
       "bio": "【版规】本版块为求职板块，发布招聘信息的帖子一律删除！"
     },
     {
-      "id": "2998189",
+      "id": "ShichengBBS-2998189",
       "title": "寻找IT Support / 测试QA / 基础行政岗 (或者其他it类的 应届生)| 中英双语 | 8月需签证",
       "industry": "other",
       "tags": [
@@ -36,8 +49,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2998189",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -52,7 +65,7 @@
       "bio": "寻找IT Support / 测试QA / 基础行政岗 (或者其他it类的 应届生)| 中英双语 | 8月需签证"
     },
     {
-      "id": "2836638",
+      "id": "ShichengBBS-2836638",
       "title": "找行政兼职",
       "industry": "other",
       "tags": [
@@ -63,8 +76,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/2836638",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -79,7 +92,7 @@
       "bio": "找行政兼职"
     },
     {
-      "id": "3014987",
+      "id": "ShichengBBS-3014987",
       "title": "Sgd 7500 走过路过，不要错过 看懂的来！",
       "industry": "other",
       "tags": [
@@ -90,8 +103,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3014987",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T10:26:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T10:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -106,7 +119,7 @@
       "bio": "Sgd 7500 走过路过，不要错过 看懂的来！"
     },
     {
-      "id": "3011367",
+      "id": "ShichengBBS-3011367",
       "title": "新加坡公民，男，想找一份固定白班，5天，5.5天制，全职，兼职，工作合适，可以立马上班！",
       "industry": "other",
       "tags": [
@@ -117,8 +130,8 @@
       "contact_type": "sms",
       "source_url": "https://www.shichengbbs.com/3011367",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T08:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T08:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -133,7 +146,7 @@
       "bio": "新加坡公民，男，想找一份固定白班，5天，5.5天制，全职，兼职，工作合适，可以立马上班！"
     },
     {
-      "id": "3021431",
+      "id": "ShichengBBS-3021431",
       "title": "招聘   马来西亚人 帮厨2600$",
       "industry": "fnb",
       "tags": [
@@ -143,8 +156,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3021431",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T07:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T06:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -158,7 +171,7 @@
       "bio": "招聘   马来西亚人 帮厨2600$"
     },
     {
-      "id": "3015228",
+      "id": "ShichengBBS-3015228",
       "title": "找个司机  或者备用司机的工作（有3c驾照）",
       "industry": "driver",
       "tags": [
@@ -169,8 +182,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3015228",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T03:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T02:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -185,7 +198,7 @@
       "bio": "找个司机  或者备用司机的工作（有3c驾照）"
     },
     {
-      "id": "2834731",
+      "id": "ShichengBBS-2834731",
       "title": "需要焊工的老板随时给我发信息、电话号码：85482588",
       "industry": "other",
       "tags": [],
@@ -193,8 +206,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2834731",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T01:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T00:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -206,7 +219,7 @@
       "bio": "需要焊工的老板随时给我发信息、电话号码：85482588"
     },
     {
-      "id": "2995064",
+      "id": "ShichengBBS-2995064",
       "title": "男 nan 30 多岁，诚心找晚上兼职（男同勿扰‼️）",
       "industry": "other",
       "tags": [
@@ -216,8 +229,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/2995064",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T16:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T15:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -231,7 +244,7 @@
       "bio": "男 nan 30 多岁，诚心找晚上兼职（男同勿扰‼️）"
     },
     {
-      "id": "3011381",
+      "id": "ShichengBBS-3011381",
       "title": "中国人🇨🇳四号司机求职，有工作经验",
       "industry": "driver",
       "tags": [
@@ -241,8 +254,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3011381",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T13:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T13:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -256,7 +269,7 @@
       "bio": "中国人🇨🇳四号司机求职，有工作经验"
     },
     {
-      "id": "3013125",
+      "id": "ShichengBBS-3013125",
       "title": "电工，安装工，焊工，油漆",
       "industry": "other",
       "tags": [
@@ -267,8 +280,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3013125",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T11:05:56.103Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -283,7 +296,7 @@
       "bio": "电工，安装工，焊工，油漆"
     },
     {
-      "id": "3021134",
+      "id": "ShichengBBS-3021134",
       "title": "美容连锁店招聘全职数位",
       "industry": "beauty",
       "tags": [
@@ -294,8 +307,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3021134",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -310,7 +323,7 @@
       "bio": "美容连锁店招聘全职数位"
     },
     {
-      "id": "3021100",
+      "id": "ShichengBBS-3021100",
       "title": "Singapore Internet Café Direct Hire",
       "industry": "other",
       "tags": [
@@ -320,8 +333,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3021100",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -335,7 +348,7 @@
       "bio": "Singapore Internet Café Direct Hire"
     },
     {
-      "id": "3021050",
+      "id": "ShichengBBS-3021050",
       "title": "本人男30岁，求晚上7点以后的兼职，不会可以学，只要给钱（男同勿扰）",
       "industry": "other",
       "tags": [
@@ -345,8 +358,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3021050",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-09T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-09T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -360,7 +373,7 @@
       "bio": "本人男30岁，求晚上7点以后的兼职，不会可以学，只要给钱（男同勿扰）"
     },
     {
-      "id": "3020758",
+      "id": "ShichengBBS-3020758",
       "title": "中国33岁男生求职",
       "industry": "other",
       "tags": [],
@@ -368,8 +381,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3020758",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-08T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-08T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -381,7 +394,7 @@
       "bio": "中国33岁男生求职"
     },
     {
-      "id": "3020735",
+      "id": "ShichengBBS-3020735",
       "title": "求职 WP 中国女 谢绝经纪",
       "industry": "other",
       "tags": [],
@@ -389,8 +402,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3020735",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-08T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-08T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -402,7 +415,7 @@
       "bio": "求职 WP 中国女 谢绝经纪"
     },
     {
-      "id": "3012985",
+      "id": "ShichengBBS-3012985",
       "title": "厨师求职，川湘菜厨师，十年丰富经验，有需要的厨师的老板联系我，可试工",
       "industry": "fnb",
       "tags": [
@@ -412,8 +425,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3012985",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-06T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-06T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -427,7 +440,7 @@
       "bio": "厨师求职，川湘菜厨师，十年丰富经验，有需要的厨师的老板联系我，可试工"
     },
     {
-      "id": "3020157",
+      "id": "ShichengBBS-3020157",
       "title": "31岁年轻有力气肯加班听话服从管理",
       "industry": "driver",
       "tags": [
@@ -439,8 +452,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3020157",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-06T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-06T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -456,16 +469,16 @@
       "bio": "31岁年轻有力气肯加班听话服从管理"
     },
     {
-      "id": "3013106",
+      "id": "ShichengBBS-3013106",
       "title": "求职仓库管理员叉车司机中国人",
-      "industry": "other",
+      "industry": "driver",
       "tags": [],
       "contact": "",
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3013106",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-06T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-06T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -477,7 +490,7 @@
       "bio": "求职仓库管理员叉车司机中国人"
     },
     {
-      "id": "3019679",
+      "id": "ShichengBBS-3019679",
       "title": "找周末兼职。晚上10点后",
       "industry": "other",
       "tags": [
@@ -488,8 +501,8 @@
       "contact_type": "sms",
       "source_url": "https://www.shichengbbs.com/3019679",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-05T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-05T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -504,7 +517,7 @@
       "bio": "找周末兼职。晚上10点后"
     },
     {
-      "id": "2948310",
+      "id": "ShichengBBS-2948310",
       "title": "找兼职",
       "industry": "other",
       "tags": [
@@ -514,8 +527,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/2948310",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-04T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-04T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -529,7 +542,7 @@
       "bio": "找兼职"
     },
     {
-      "id": "3019197",
+      "id": "ShichengBBS-3019197",
       "title": "本人男，求职夜班10点以后的兼职，时间合适可以长期做，欧南园附近都可以",
       "industry": "other",
       "tags": [
@@ -539,8 +552,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3019197",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-03T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-03T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -554,7 +567,7 @@
       "bio": "本人男，求职夜班10点以后的兼职，时间合适可以长期做，欧南园附近都可以"
     },
     {
-      "id": "3017078",
+      "id": "ShichengBBS-3017078",
       "title": "3 号司机求职，全职，中介勿扰。本人在新",
       "industry": "driver",
       "tags": [
@@ -565,8 +578,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3017078",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-01T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-01T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -581,7 +594,7 @@
       "bio": "3 号司机求职，全职，中介勿扰。本人在新"
     },
     {
-      "id": "3018472",
+      "id": "ShichengBBS-3018472",
       "title": "求职3号驾照人在新，做送货司机6年",
       "industry": "driver",
       "tags": [
@@ -591,8 +604,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3018472",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-01T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-01T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -606,7 +619,7 @@
       "bio": "求职3号驾照人在新，做送货司机6年"
     },
     {
-      "id": "3018410",
+      "id": "ShichengBBS-3018410",
       "title": "人在国内，想找服务员，或者服装销售",
       "industry": "fnb",
       "tags": [
@@ -616,8 +629,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3018410",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-01T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-01T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -631,7 +644,7 @@
       "bio": "人在国内，想找服务员，或者服装销售"
     },
     {
-      "id": "3015448",
+      "id": "ShichengBBS-3015448",
       "title": "求职普车工作 中介勿扰",
       "industry": "other",
       "tags": [
@@ -642,8 +655,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3015448",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-31T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-31T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -658,7 +671,7 @@
       "bio": "求职普车工作 中介勿扰"
     },
     {
-      "id": "3017497",
+      "id": "ShichengBBS-3017497",
       "title": "生产线Supervisor / 主管",
       "industry": "other",
       "tags": [
@@ -669,8 +682,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3017497",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-30T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-30T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -685,7 +698,7 @@
       "bio": "生产线Supervisor / 主管"
     },
     {
-      "id": "2916814",
+      "id": "ShichengBBS-2916814",
       "title": "理工学院学生求职",
       "industry": "other",
       "tags": [
@@ -695,8 +708,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2916814",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-28T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-28T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -710,7 +723,7 @@
       "bio": "理工学院学生求职"
     },
     {
-      "id": "2945718",
+      "id": "ShichengBBS-2945718",
       "title": "钢筋开料",
       "industry": "other",
       "tags": [
@@ -720,8 +733,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2945718",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-28T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-28T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -735,7 +748,7 @@
       "bio": "钢筋开料"
     },
     {
-      "id": "2994595",
+      "id": "ShichengBBS-2994595",
       "title": "四号WP司机求职",
       "industry": "driver",
       "tags": [
@@ -747,8 +760,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2994595",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-26T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-25T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -764,7 +777,7 @@
       "bio": "四号WP司机求职"
     },
     {
-      "id": "2992041",
+      "id": "ShichengBBS-2992041",
       "title": "求兼职",
       "industry": "other",
       "tags": [
@@ -775,8 +788,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2992041",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-25T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-25T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -791,7 +804,7 @@
       "bio": "求兼职"
     },
     {
-      "id": "2955716",
+      "id": "ShichengBBS-2955716",
       "title": "求职，中国人",
       "industry": "driver",
       "tags": [
@@ -802,8 +815,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/2955716",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-24T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-24T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -818,7 +831,7 @@
       "bio": "求职，中国人"
     },
     {
-      "id": "3015881",
+      "id": "ShichengBBS-3015881",
       "title": "马来西亚人找工贴",
       "industry": "other",
       "tags": [
@@ -830,8 +843,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3015881",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-24T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-24T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -847,7 +860,7 @@
       "bio": "马来西亚人找工贴"
     },
     {
-      "id": "3015441",
+      "id": "ShichengBBS-3015441",
       "title": "新加坡新pr求职，中介勿扰",
       "industry": "other",
       "tags": [
@@ -858,8 +871,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3015441",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-23T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-23T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -874,7 +887,7 @@
       "bio": "新加坡新pr求职，中介勿扰"
     },
     {
-      "id": "3011260",
+      "id": "ShichengBBS-3011260",
       "title": "中餐厨师求职。年龄40岁厨龄20年。能适应节奏快工作",
       "industry": "fnb",
       "tags": [
@@ -884,8 +897,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3011260",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-23T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-23T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -899,7 +912,7 @@
       "bio": "中餐厨师求职。年龄40岁厨龄20年。能适应节奏快工作"
     },
     {
-      "id": "3015076",
+      "id": "ShichengBBS-3015076",
       "title": "龙井绿茶招聘厨房各岗位人员",
       "industry": "other",
       "tags": [],
@@ -907,8 +920,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3015076",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-22T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-22T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -920,7 +933,7 @@
       "bio": "龙井绿茶招聘厨房各岗位人员"
     },
     {
-      "id": "2821881",
+      "id": "ShichengBBS-2821881",
       "title": "多年工作经验老电工，求职",
       "industry": "other",
       "tags": [
@@ -931,8 +944,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2821881",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-21T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-21T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -947,7 +960,7 @@
       "bio": "多年工作经验老电工，求职"
     },
     {
-      "id": "3014568",
+      "id": "ShichengBBS-3014568",
       "title": "求职卖衣服 兼职下午或晚上6点后都可以",
       "industry": "other",
       "tags": [
@@ -957,8 +970,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3014568",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-20T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-20T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -972,7 +985,7 @@
       "bio": "求职卖衣服 兼职下午或晚上6点后都可以"
     },
     {
-      "id": "3014187",
+      "id": "ShichengBBS-3014187",
       "title": "安装员 (6天制) Technician (可高达 S$3,000+)",
       "industry": "other",
       "tags": [],
@@ -980,8 +993,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3014187",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-19T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-19T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -993,7 +1006,7 @@
       "bio": "安装员 (6天制) Technician (可高达 S$3,000+)"
     },
     {
-      "id": "3013923",
+      "id": "ShichengBBS-3013923",
       "title": "求职全职咖啡师｜有咖啡餐饮经验 可即刻上岗 Experienced Barista | Immed",
       "industry": "fnb",
       "tags": [
@@ -1004,8 +1017,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3013923",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-18T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-18T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1020,7 +1033,7 @@
       "bio": "求职全职咖啡师｜有咖啡餐饮经验 可即刻上岗 Experienced Barista | Immed"
     },
     {
-      "id": "3013798",
+      "id": "ShichengBBS-3013798",
       "title": "四号司机专科学历",
       "industry": "driver",
       "tags": [
@@ -1030,8 +1043,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3013798",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-18T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-18T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1045,7 +1058,7 @@
       "bio": "四号司机专科学历"
     },
     {
-      "id": "2951654",
+      "id": "ShichengBBS-2951654",
       "title": "本人有四号驾照想找个司机工作",
       "industry": "driver",
       "tags": [
@@ -1056,8 +1069,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/2951654",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-18T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-18T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1072,7 +1085,7 @@
       "bio": "本人有四号驾照想找个司机工作"
     },
     {
-      "id": "2929723",
+      "id": "ShichengBBS-2929723",
       "title": "3号司机求职",
       "industry": "driver",
       "tags": [
@@ -1083,8 +1096,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2929723",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-18T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-18T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1099,16 +1112,16 @@
       "bio": "3号司机求职"
     },
     {
-      "id": "3013257",
+      "id": "ShichengBBS-3013257",
       "title": "找服务员工作",
-      "industry": "other",
+      "industry": "fnb",
       "tags": [],
       "contact": "",
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3013257",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-17T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-17T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1120,7 +1133,7 @@
       "bio": "找服务员工作"
     },
     {
-      "id": "3013135",
+      "id": "ShichengBBS-3013135",
       "title": "牛车水摊位请助手 月新2900",
       "industry": "other",
       "tags": [
@@ -1130,8 +1143,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3013135",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-16T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-16T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1145,7 +1158,7 @@
       "bio": "牛车水摊位请助手 月新2900"
     },
     {
-      "id": "3013099",
+      "id": "ShichengBBS-3013099",
       "title": "美容熟手",
       "industry": "beauty",
       "tags": [
@@ -1155,8 +1168,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3013099",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-16T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-16T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1170,7 +1183,7 @@
       "bio": "美容熟手"
     },
     {
-      "id": "3012829",
+      "id": "ShichengBBS-3012829",
       "title": "紧急求职🍁🙈☘️",
       "industry": "other",
       "tags": [
@@ -1181,8 +1194,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3012829",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-15T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-15T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1197,7 +1210,7 @@
       "bio": "紧急求职🍁🙈☘️"
     },
     {
-      "id": "3012567",
+      "id": "ShichengBBS-3012567",
       "title": "紧急求职",
       "industry": "fnb",
       "tags": [
@@ -1209,8 +1222,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3012567",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-15T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-15T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1226,7 +1239,7 @@
       "bio": "紧急求职"
     },
     {
-      "id": "3012470",
+      "id": "ShichengBBS-3012470",
       "title": "🎮 Elixir Esports Hiring 🎮",
       "industry": "other",
       "tags": [
@@ -1236,8 +1249,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3012470",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-14T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-14T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1251,7 +1264,7 @@
       "bio": "🎮 Elixir Esports Hiring 🎮"
     },
     {
-      "id": "3012254",
+      "id": "ShichengBBS-3012254",
       "title": "木工头手求职",
       "industry": "other",
       "tags": [],
@@ -1259,8 +1272,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3012254",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-14T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-14T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1272,7 +1285,7 @@
       "bio": "木工头手求职"
     },
     {
-      "id": "2197377",
+      "id": "ShichengBBS-2197377",
       "title": "优秀厨师求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 3 次收藏",
       "industry": "other",
       "tags": [],
@@ -1280,8 +1293,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2197377",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1293,7 +1306,7 @@
       "bio": "优秀厨师求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 3 次收藏"
     },
     {
-      "id": "2942342",
+      "id": "ShichengBBS-2942342",
       "title": "女模特求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏",
       "industry": "other",
       "tags": [],
@@ -1301,8 +1314,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2942342",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1314,7 +1327,7 @@
       "bio": "女模特求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏"
     },
     {
-      "id": "2892732",
+      "id": "ShichengBBS-2892732",
       "title": "PR女求职，私人助理/秘书/文秘工作\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏",
       "industry": "other",
       "tags": [],
@@ -1322,8 +1335,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2892732",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1335,7 +1348,7 @@
       "bio": "PR女求职，私人助理/秘书/文秘工作\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏"
     },
     {
-      "id": "2235345",
+      "id": "ShichengBBS-2235345",
       "title": "东北菜川菜厨师求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏",
       "industry": "other",
       "tags": [],
@@ -1343,8 +1356,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2235345",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1356,7 +1369,7 @@
       "bio": "东北菜川菜厨师求职\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏"
     },
     {
-      "id": "2223627",
+      "id": "ShichengBBS-2223627",
       "title": "· 新加坡  换工作，厨师，帮厨，大锅菜，炸锅，有多年厨师经验电话824662\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏",
       "industry": "other",
       "tags": [],
@@ -1364,8 +1377,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/2223627",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-06-10T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-06-10T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [],
@@ -1377,7 +1390,7 @@
       "bio": "· 新加坡  换工作，厨师，帮厨，大锅菜，炸锅，有多年厨师经验电话824662\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 2 次收藏"
     },
     {
-      "id": "3012174",
+      "id": "ShichengBBS-3012174",
       "title": "中餐馆招聘全职/兼职服务员，公民/PR/LTVP 优先 。",
       "industry": "other",
       "tags": [
@@ -1391,8 +1404,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3012174",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-14T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-13T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1410,7 +1423,7 @@
       "bio": "中餐馆招聘全职/兼职服务员，公民/PR/LTVP 优先 。"
     },
     {
-      "id": "3007857",
+      "id": "ShichengBBS-3007857",
       "title": "求职厨师 HOT COOK",
       "industry": "fnb",
       "tags": [
@@ -1422,8 +1435,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3007857",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-13T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-13T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1439,7 +1452,7 @@
       "bio": "求职厨师 HOT COOK"
     },
     {
-      "id": "3003140",
+      "id": "ShichengBBS-3003140",
       "title": "东部中医诊所招聘中医师",
       "industry": "other",
       "tags": [
@@ -1450,8 +1463,8 @@
       "contact_type": "whatsapp",
       "source_url": "https://www.shichengbbs.com/3003140",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-13T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-13T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1466,7 +1479,7 @@
       "bio": "东部中医诊所招聘中医师"
     },
     {
-      "id": "3012021",
+      "id": "ShichengBBS-3012021",
       "title": "Experience full or part-time Beautican and Body therapist",
       "industry": "beauty",
       "tags": [
@@ -1479,8 +1492,8 @@
       "contact_type": "sms",
       "source_url": "https://www.shichengbbs.com/3012021",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-13T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-13T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1497,7 +1510,7 @@
       "bio": "Experience full or part-time Beautican and Body therapist"
     },
     {
-      "id": "3011502",
+      "id": "ShichengBBS-3011502",
       "title": "🎨 资深平面设计师 / 插画师 / 多媒体设计师求职中",
       "industry": "other",
       "tags": [
@@ -1508,8 +1521,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3011502",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-12T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-12T11:39:20.664Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1524,7 +1537,7 @@
       "bio": "🎨 资深平面设计师 / 插画师 / 多媒体设计师求职中"
     },
     {
-      "id": "3003018",
+      "id": "ShichengBBS-3003018",
       "title": "家属准证 女 41",
       "industry": "other",
       "tags": [
@@ -1535,8 +1548,8 @@
       "contact_type": "phone",
       "source_url": "https://www.shichengbbs.com/3003018",
       "source_platform": "ShichengBBS",
-      "posted_at": "2026-05-11T11:05:56.104Z",
-      "scraped_at": "2026-06-10T11:05:55.274Z",
+      "posted_at": "2026-05-11T11:39:20.665Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
       "type": "seeker",
       "name": "",
       "skills": [
@@ -1549,6 +1562,2467 @@
       "expected_salary_max": 0,
       "availability": "immediate",
       "bio": "家属准证 女 41"
+    },
+    {
+      "id": "ShichengLuntan-853738",
+      "title": "本人男，新加坡公民，想找一份 白班 的工作，全职，兼职都可以，5天，5.5天制，谢谢，非诚勿扰！",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验",
+        "全职"
+      ],
+      "contact": "82556860",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/853738",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T08:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人男，新加坡公民，想找一份 白班 的工作，全职，兼职都可以，5天，5.5天制，谢谢，非诚勿扰！"
+    },
+    {
+      "id": "ShichengLuntan-853478",
+      "title": "专办👩‍👧‍👧狮城各项准证转PR成公民🆚上诉⭕被拒签,拉黑解禁/挂靠,家属个人创业证🉑定居📞89185356",
+      "industry": "driver",
+      "tags": [
+        "兼职",
+        "司机求职",
+        "餐饮求职",
+        "美容美发求职",
+        "文员/会计",
+        "家教求职",
+        "公民/PR",
+        "有经验",
+        "全职",
+        "家属准证"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/853478",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-07T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "司机求职",
+        "餐饮求职",
+        "美容美发求职",
+        "文员/会计",
+        "家教求职",
+        "公民/PR",
+        "有经验",
+        "全职",
+        "家属准证"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "专办👩‍👧‍👧狮城各项准证转PR成公民🆚上诉⭕被拒签,拉黑解禁/挂靠,家属个人创业证🉑定居📞89185356"
+    },
+    {
+      "id": "ShichengLuntan-846055",
+      "title": "专办👩‍👧‍👧狮城各项准证转PR成公民🆚上诉⭕被拒,拉黑事宜/挂靠,个人创业证🉑定居挣钱.📞89185356",
+      "industry": "driver",
+      "tags": [
+        "兼职",
+        "司机求职",
+        "餐饮求职",
+        "美容美发求职",
+        "文员/会计",
+        "家教求职",
+        "公民/PR",
+        "有经验",
+        "全职",
+        "家属准证"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/846055",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-07T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "司机求职",
+        "餐饮求职",
+        "美容美发求职",
+        "文员/会计",
+        "家教求职",
+        "公民/PR",
+        "有经验",
+        "全职",
+        "家属准证"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "专办👩‍👧‍👧狮城各项准证转PR成公民🆚上诉⭕被拒,拉黑事宜/挂靠,个人创业证🉑定居挣钱.📞89185356"
+    },
+    {
+      "id": "ShichengLuntan-854247",
+      "title": "求职，找工作",
+      "industry": "other",
+      "tags": [
+        "全职"
+      ],
+      "contact": "+6587249726",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/854247",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-05-23T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职，找工作"
+    },
+    {
+      "id": "ShichengLuntan-854246",
+      "title": "求职找工作",
+      "industry": "other",
+      "tags": [],
+      "contact": "+6587249726",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/854246",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-05-23T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职找工作"
+    },
+    {
+      "id": "ShichengLuntan-854197",
+      "title": "人在新，求职一份安稳工作，踏实肯干，老板说的一定完成",
+      "industry": "other",
+      "tags": [],
+      "contact": "+6587249726",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/854197",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-05-23T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "人在新，求职一份安稳工作，踏实肯干，老板说的一定完成"
+    },
+    {
+      "id": "ShichengLuntan-847928",
+      "title": "裕廊岛仓库打杂需要两个人（长期）",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/847928",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "west",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "裕廊岛仓库打杂需要两个人（长期）"
+    },
+    {
+      "id": "ShichengLuntan-847773",
+      "title": "🏦汇率 Bank Card🏦 招商兑换",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "+6589647665",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/847773",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "🏦汇率 Bank Card🏦 招商兑换"
+    },
+    {
+      "id": "ShichengLuntan-846581",
+      "title": "找麻辣香锅相关工作",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/846581",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "找麻辣香锅相关工作"
+    },
+    {
+      "id": "ShichengLuntan-846356",
+      "title": "找工贴",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/846356",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "找工贴"
+    },
+    {
+      "id": "ShichengLuntan-845039",
+      "title": "刮腻子，刷乳胶漆，开荒，保洁，",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/845039",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "刮腻子，刷乳胶漆，开荒，保洁，"
+    },
+    {
+      "id": "ShichengLuntan-845038",
+      "title": "贴壁纸，贴壁布，广告画",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/845038",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "贴壁纸，贴壁布，广告画"
+    },
+    {
+      "id": "ShichengLuntan-844700",
+      "title": "机械装配电工",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/844700",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "机械装配电工"
+    },
+    {
+      "id": "ShichengLuntan-842859",
+      "title": "本人10年经验专业安装维修各种窗帘，电动晾衣架！有需要的老板联系",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "+6588073286",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/842859",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人10年经验专业安装维修各种窗帘，电动晾衣架！有需要的老板联系"
+    },
+    {
+      "id": "ShichengLuntan-843422",
+      "title": "四号驾照司机求职",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/843422",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "四号驾照司机求职"
+    },
+    {
+      "id": "ShichengLuntan-843201",
+      "title": "专业安装电动晾衣架，窗帘！！有需要的朋友联系价格80",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "+6588073286",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/843201",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "专业安装电动晾衣架，窗帘！！有需要的朋友联系价格80"
+    },
+    {
+      "id": "ShichengLuntan-842874",
+      "title": "本地女大学生找兼职~",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "+6590268190",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/842874",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本地女大学生找兼职~"
+    },
+    {
+      "id": "ShichengLuntan-842434",
+      "title": "本人专业安装维修各种窗帘，电动晾衣架！卫生间推拉门安装，有需要的老板联系88073286",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "+6588073286",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/842434",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人专业安装维修各种窗帘，电动晾衣架！卫生间推拉门安装，有需要的老板联系88073286"
+    },
+    {
+      "id": "ShichengLuntan-841888",
+      "title": "厨师或帮厨",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/841888",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "厨师或帮厨"
+    },
+    {
+      "id": "ShichengLuntan-832008",
+      "title": "马来西亚本地公司直招：招聘长期全职 马来西亚设计文员",
+      "industry": "other",
+      "tags": [
+        "文员/会计",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/832008",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "文员/会计",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "马来西亚本地公司直招：招聘长期全职 马来西亚设计文员"
+    },
+    {
+      "id": "ShichengLuntan-840600",
+      "title": "家庭清洁保姆",
+      "industry": "other",
+      "tags": [
+        "家教求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/840600",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "家教求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "家庭清洁保姆"
+    },
+    {
+      "id": "ShichengLuntan-840569",
+      "title": "做饭保洁阿姨",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/840569",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "做饭保洁阿姨"
+    },
+    {
+      "id": "ShichengLuntan-840513",
+      "title": "幼托中心诚聘做饭阿姨3名 中介勿扰",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "88888888",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/840513",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "幼托中心诚聘做饭阿姨3名 中介勿扰"
+    },
+    {
+      "id": "ShichengLuntan-840408",
+      "title": "中国人寻找新加坡工作，中介勿扰",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "+6584060855",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/840408",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "中国人寻找新加坡工作，中介勿扰"
+    },
+    {
+      "id": "ShichengLuntan-840276",
+      "title": "招聘清洁工",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/840276",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "招聘清洁工"
+    },
+    {
+      "id": "ShichengLuntan-840155",
+      "title": "招牌 美容养生师",
+      "industry": "beauty",
+      "tags": [
+        "美容美发求职",
+        "有经验",
+        "公民/PR",
+        "家属准证"
+      ],
+      "contact": "+6587975368",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/840155",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "美容美发求职",
+        "有经验",
+        "公民/PR",
+        "家属准证"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "招牌 美容养生师"
+    },
+    {
+      "id": "ShichengLuntan-840036",
+      "title": "LTVP 女 53岁 求职东部工作机会",
+      "industry": "other",
+      "tags": [
+        "全职",
+        "兼职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/840036",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "全职",
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "LTVP 女 53岁 求职东部工作机会"
+    },
+    {
+      "id": "ShichengLuntan-839662",
+      "title": "找SPass 工作",
+      "industry": "other",
+      "tags": [
+        "文员/会计",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/839662",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "文员/会计",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "找SPass 工作"
+    },
+    {
+      "id": "ShichengLuntan-838813",
+      "title": "3号司机",
+      "industry": "driver",
+      "tags": [
+        "司机求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/838813",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "3号司机"
+    },
+    {
+      "id": "ShichengLuntan-838770",
+      "title": "中医诊所前台",
+      "industry": "other",
+      "tags": [
+        "全职",
+        "公民/PR"
+      ],
+      "contact": "+6591229665",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/838770",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "全职",
+        "公民/PR"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "中医诊所前台"
+    },
+    {
+      "id": "ShichengLuntan-837576",
+      "title": "高压管道焊工",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/837576",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "高压管道焊工"
+    },
+    {
+      "id": "ShichengLuntan-836293",
+      "title": "餐厅需要服务生-长期-无中介费",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/836293",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "餐厅需要服务生-长期-无中介费"
+    },
+    {
+      "id": "ShichengLuntan-819466",
+      "title": "新加坡求职  加微信  进群  每天单子多多  薪资高  快来了解！\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 1 次收藏",
+      "industry": "other",
+      "tags": [],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/819466",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "新加坡求职  加微信  进群  每天单子多多  薪资高  快来了解！\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t 1 次收藏"
+    },
+    {
+      "id": "ShichengLuntan-834985",
+      "title": "羽毛球训练",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/834985",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "羽毛球训练"
+    },
+    {
+      "id": "ShichengLuntan-834667",
+      "title": "pr找兼职早7--中午11",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "+6594727692",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/834667",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "pr找兼职早7--中午11"
+    },
+    {
+      "id": "ShichengLuntan-834462",
+      "title": "为持有LTVP的老爸找工作",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/834462",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "为持有LTVP的老爸找工作"
+    },
+    {
+      "id": "ShichengLuntan-834332",
+      "title": "叉车司机，多年经验，想找一份工作，或者长期兼职也可以",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/834332",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "叉车司机，多年经验，想找一份工作，或者长期兼职也可以"
+    },
+    {
+      "id": "ShichengLuntan-834096",
+      "title": "求职店员或者不要求英文的销售",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/834096",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职店员或者不要求英文的销售"
+    },
+    {
+      "id": "ShichengLuntan-834063",
+      "title": "42岁男求职",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/834063",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "42岁男求职"
+    },
+    {
+      "id": "ShichengLuntan-833224",
+      "title": "求职服务员收银或者文员工作",
+      "industry": "other",
+      "tags": [
+        "文员/会计"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/833224",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "文员/会计"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职服务员收银或者文员工作"
+    },
+    {
+      "id": "ShichengLuntan-833211",
+      "title": "东北烧烤师傅求职！人在新加坡！",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/833211",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "东北烧烤师傅求职！人在新加坡！"
+    },
+    {
+      "id": "ShichengLuntan-832220",
+      "title": "求职冷冻肉切割工作",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "+6587647887",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/832220",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职冷冻肉切割工作"
+    },
+    {
+      "id": "ShichengLuntan-831601",
+      "title": "求会计文员/事务所工作，SP，有本地经验，ACCA+Kaplan Degree Diploma",
+      "industry": "other",
+      "tags": [
+        "文员/会计",
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/831601",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "文员/会计",
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求会计文员/事务所工作，SP，有本地经验，ACCA+Kaplan Degree Diploma"
+    },
+    {
+      "id": "ShichengLuntan-831771",
+      "title": "求职炒菜工作",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/831771",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职炒菜工作"
+    },
+    {
+      "id": "ShichengLuntan-830749",
+      "title": "求个化工厂外操或者电子厂维修工作",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "619953516",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/830749",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求个化工厂外操或者电子厂维修工作"
+    },
+    {
+      "id": "ShichengLuntan-830479",
+      "title": "找工作",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/830479",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "找工作"
+    },
+    {
+      "id": "ShichengLuntan-830416",
+      "title": "专业东北烧烤师傅",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "+6581993420",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/830416",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "专业东北烧烤师傅"
+    },
+    {
+      "id": "ShichengLuntan-830076",
+      "title": "求职，中国人，在新  男",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "+6581563056",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/830076",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职，中国人，在新  男"
+    },
+    {
+      "id": "ShichengLuntan-829854",
+      "title": "冷气维修3号司机",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "615302227",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/829854",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "冷气维修3号司机"
+    },
+    {
+      "id": "ShichengLuntan-829511",
+      "title": "求职…",
+      "industry": "beauty",
+      "tags": [
+        "美容美发求职"
+      ],
+      "contact": "624466492",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/829511",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "美容美发求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职…"
+    },
+    {
+      "id": "ShichengLuntan-829211",
+      "title": "淮扬菜厨师",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "85249586",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/829211",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "淮扬菜厨师"
+    },
+    {
+      "id": "ShichengLuntan-829046",
+      "title": "求职4号司机",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/829046",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职4号司机"
+    },
+    {
+      "id": "ShichengLuntan-829012",
+      "title": "求职 男生",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "+6587586520",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/829012",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职 男生"
+    },
+    {
+      "id": "ShichengLuntan-828548",
+      "title": "本人女。求职",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "+6585491509",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/828548",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人女。求职"
+    },
+    {
+      "id": "ShichengLuntan-828918",
+      "title": "冷气头手",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "698293778",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/828918",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "冷气头手"
+    },
+    {
+      "id": "ShichengLuntan-828658",
+      "title": "华文补习",
+      "industry": "other",
+      "tags": [
+        "家教求职",
+        "有经验"
+      ],
+      "contact": "+6580274056",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/828658",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "家教求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "华文补习"
+    },
+    {
+      "id": "ShichengLuntan-828459",
+      "title": "招电器安装维修工",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "+6593397285",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/828459",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "招电器安装维修工"
+    },
+    {
+      "id": "ShichengLuntan-827863",
+      "title": "求职-数控车床",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/827863",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职-数控车床"
+    },
+    {
+      "id": "ShichengLuntan-827197",
+      "title": "cnc求职",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/827197",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "cnc求职"
+    },
+    {
+      "id": "ShichengLuntan-826920",
+      "title": "中国小伙在新求职川湘菜馆",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/826920",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "中国小伙在新求职川湘菜馆"
+    },
+    {
+      "id": "ShichengLuntan-826488",
+      "title": "空调学徒",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "+6585222576",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/826488",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "空调学徒"
+    },
+    {
+      "id": "ShichengLuntan-826216",
+      "title": "求职女 人在新",
+      "industry": "beauty",
+      "tags": [
+        "美容美发求职",
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/826216",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "美容美发求职",
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职女 人在新"
+    },
+    {
+      "id": "ShichengLuntan-824994",
+      "title": "找工作",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "+6581756130",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/824994",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "找工作"
+    },
+    {
+      "id": "ShichengLuntan-823884",
+      "title": "求职四号司机",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "+6592337466",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/823884",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职四号司机"
+    },
+    {
+      "id": "ShichengLuntan-823763",
+      "title": "4号巴士司机求职",
+      "industry": "driver",
+      "tags": [
+        "司机求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/823763",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "4号巴士司机求职"
+    },
+    {
+      "id": "ShichengLuntan-823703",
+      "title": "苹果充值卡150便宜处理",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "673037899",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/823703",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "苹果充值卡150便宜处理"
+    },
+    {
+      "id": "ShichengLuntan-823257",
+      "title": "本人三号驾照 pr .寻找司机或一起创业的伙伴，冷气安装类，包裹运输类。.驾车暂时不熟练。",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "+6585222576",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/823257",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人三号驾照 pr .寻找司机或一起创业的伙伴，冷气安装类，包裹运输类。.驾车暂时不熟练。"
+    },
+    {
+      "id": "ShichengLuntan-822894",
+      "title": "求职4号司机，中介勿扰",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/822894",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职4号司机，中介勿扰"
+    },
+    {
+      "id": "ShichengLuntan-822438",
+      "title": "本人五年家属证。女。60岁 想找一份轻松的工作",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "+6597854997",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/822438",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人五年家属证。女。60岁 想找一份轻松的工作"
+    },
+    {
+      "id": "ShichengLuntan-822364",
+      "title": "售卖员点心，果汁，泡咖啡",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "公民/PR"
+      ],
+      "contact": "92701113",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/822364",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "公民/PR"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "售卖员点心，果汁，泡咖啡"
+    },
+    {
+      "id": "ShichengLuntan-821565",
+      "title": "求工作 国籍：（越南女）",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/821565",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求工作 国籍：（越南女）"
+    },
+    {
+      "id": "ShichengLuntan-822030",
+      "title": "求职（兼职）",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/822030",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职（兼职）"
+    },
+    {
+      "id": "ShichengLuntan-821650",
+      "title": "中国人，寻求新加坡一份工作轻松，工资低些也行的工作。",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/821650",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "中国人，寻求新加坡一份工作轻松，工资低些也行的工作。"
+    },
+    {
+      "id": "ShichengLuntan-820901",
+      "title": "求一份工作，视频剪辑师，普工都可以",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/820901",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求一份工作，视频剪辑师，普工都可以"
+    },
+    {
+      "id": "ShichengLuntan-820667",
+      "title": "饺子工熟手求职",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "85406332",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/820667",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "饺子工熟手求职"
+    },
+    {
+      "id": "ShichengLuntan-820399",
+      "title": "厨师求职",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "613843506",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/820399",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "厨师求职"
+    },
+    {
+      "id": "ShichengLuntan-819705",
+      "title": "国内司机求职有3C驾照",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "81223155",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/819705",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "国内司机求职有3C驾照"
+    },
+    {
+      "id": "ShichengLuntan-819327",
+      "title": "寻求兼职 晚上7点可以到11点",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/819327",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "寻求兼职 晚上7点可以到11点"
+    },
+    {
+      "id": "ShichengLuntan-818821",
+      "title": "厨师求职在新四年",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818821",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "厨师求职在新四年"
+    },
+    {
+      "id": "ShichengLuntan-818865",
+      "title": "厨师找求职",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818865",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "厨师找求职"
+    },
+    {
+      "id": "ShichengLuntan-818851",
+      "title": "翻新家具，换蝴蝶，调蝴蝶",
+      "industry": "other",
+      "tags": [
+        "兼职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818851",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "翻新家具，换蝴蝶，调蝴蝶"
+    },
+    {
+      "id": "ShichengLuntan-818678",
+      "title": "人在新加坡，三号驾照，驾车熟悉路线（谢绝中介）",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818678",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "人在新加坡，三号驾照，驾车熟悉路线（谢绝中介）"
+    },
+    {
+      "id": "ShichengLuntan-818670",
+      "title": "急求CNC学徒/QC工作",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818670",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "急求CNC学徒/QC工作"
+    },
+    {
+      "id": "ShichengLuntan-816534",
+      "title": "靠谱中介 工种全 办理不成功不收费  更多咨询 微信17519409739",
+      "industry": "beauty",
+      "tags": [
+        "美容美发求职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/816534",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "美容美发求职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "靠谱中介 工种全 办理不成功不收费  更多咨询 微信17519409739"
+    },
+    {
+      "id": "ShichengLuntan-818036",
+      "title": "行政秘书/老板私人助理/秘书",
+      "industry": "other",
+      "tags": [
+        "有经验",
+        "全职"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818036",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验",
+        "全职"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "行政秘书/老板私人助理/秘书"
+    },
+    {
+      "id": "ShichengLuntan-818222",
+      "title": "求职，中国人在中国",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/818222",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "求职，中国人在中国"
+    },
+    {
+      "id": "ShichengLuntan-817361",
+      "title": "三号司机求职",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "85105315",
+      "contact_type": "sms",
+      "source_url": "https://www.shichengluntan.com/817361",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "三号司机求职"
+    },
+    {
+      "id": "ShichengLuntan-817595",
+      "title": "本人3号驾驶员求职",
+      "industry": "driver",
+      "tags": [
+        "司机求职",
+        "有经验"
+      ],
+      "contact": "+6586085716",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/817595",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "司机求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "本人3号驾驶员求职"
+    },
+    {
+      "id": "ShichengLuntan-816900",
+      "title": "中餐厨师",
+      "industry": "fnb",
+      "tags": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/816900",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "餐饮求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "中餐厨师"
+    },
+    {
+      "id": "ShichengLuntan-816629",
+      "title": "电动车维修师傅求职",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "+6581722769",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/816629",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "电动车维修师傅求职"
+    },
+    {
+      "id": "ShichengLuntan-816545",
+      "title": "想在新加坡找一份厨房帮忙或者服务的工作",
+      "industry": "other",
+      "tags": [
+        "兼职",
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/816545",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "兼职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "想在新加坡找一份厨房帮忙或者服务的工作"
+    },
+    {
+      "id": "ShichengLuntan-816408",
+      "title": "理发师",
+      "industry": "beauty",
+      "tags": [
+        "美容美发求职",
+        "有经验"
+      ],
+      "contact": "+6588768005",
+      "contact_type": "whatsapp",
+      "source_url": "https://www.shichengluntan.com/816408",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "美容美发求职",
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "理发师"
+    },
+    {
+      "id": "ShichengLuntan-816188",
+      "title": "厨师求职",
+      "industry": "other",
+      "tags": [
+        "有经验"
+      ],
+      "contact": "",
+      "contact_type": "phone",
+      "source_url": "https://www.shichengluntan.com/816188",
+      "source_platform": "ShichengLuntan",
+      "posted_at": "2026-06-10T11:39:30.393Z",
+      "scraped_at": "2026-06-10T11:39:10.746Z",
+      "type": "seeker",
+      "name": "",
+      "skills": [
+        "有经验"
+      ],
+      "experience_years": 0,
+      "location_preference": "any",
+      "expected_salary_min": 0,
+      "expected_salary_max": 0,
+      "availability": "immediate",
+      "bio": "厨师求职"
     }
   ]
 }

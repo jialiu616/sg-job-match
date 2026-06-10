@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 /**
- * Scrape job listings from ShichengBBS forum.
+ * Scrape job listings from Singapore Chinese-language forums.
  *
- * Sections:
- *  - Employer listings: https://www.shichengbbs.com/c47   (公司直招•非中介)
- *  - Job seeker listings: https://www.shichengbbs.com/c441 (狮城求职)
+ * Sources:
+ *   1. ShichengBBS  (shichengbbs.com)   — flat post-id link format
+ *   2. ShichengLuntan (shichengluntan.com) — same structure as ShichengBBS
+ *   3. ShichengBao  (shichengbao.com)   — Discuz forum format
  *
  * Outputs:
- *  - public/data/employers.json
- *  - public/data/seekers.json
+ *   - public/data/employers.json
+ *   - public/data/seekers.json
  *
  * Run: `node scripts/scrape-listings.mjs`
  */
@@ -23,21 +24,48 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
 
-const SOURCE_BASE = 'https://www.shichengbbs.com';
-const SOURCE_PLATFORM = 'ShichengBBS';
-
-const SECTIONS = [
-  { type: 'employer', slug: 'c47', label: '公司直招•非中介' },
-  { type: 'seeker', slug: 'c441', label: '狮城求职' },
-];
-
-const PAGES_PER_SECTION = 3;
 const FRESHNESS_DAYS = 30;
 const FRESHNESS_MS = FRESHNESS_DAYS * 86400000;
+const REQUEST_DELAY_MS = 1500;
 
 const USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+// ---------------------------------------------------------------------------
+// Source configuration — each source can expose employer and/or seeker pages
+// and chooses the parser that matches its HTML structure.
+// ---------------------------------------------------------------------------
+const SOURCES = [
+  {
+    name: 'ShichengBBS',
+    platform: 'ShichengBBS',
+    baseUrl: 'https://www.shichengbbs.com',
+    employerPaths: ['/c47', '/c47?page=2', '/c47?page=3'],
+    seekerPaths: ['/c441', '/c441?page=2', '/c441?page=3'],
+    parser: 'shicheng',
+  },
+  {
+    name: 'ShichengLuntan',
+    platform: 'ShichengLuntan',
+    baseUrl: 'https://www.shichengluntan.com',
+    employerPaths: ['/c47', '/c47?page=2', '/c47?page=3'],
+    seekerPaths: ['/c210', '/c210?page=2', '/c210?page=3'],
+    parser: 'shicheng',
+  },
+  {
+    name: 'ShichengBao',
+    platform: 'ShichengBao',
+    baseUrl: 'https://www.shichengbao.com',
+    employerPaths: [
+      '/forum.php?mod=forumdisplay&fid=69',
+      '/forum.php?mod=forumdisplay&fid=69&page=2',
+      '/forum.php?mod=forumdisplay&fid=69&page=3',
+    ],
+    seekerPaths: [],
+    parser: 'discuz',
+  },
+];
 
 // ---------------------------------------------------------------------------
 // Category -> Industry enum mapping
@@ -62,7 +90,6 @@ function mapIndustry(tags) {
   for (const tag of tags) {
     if (categoryMap[tag]) return categoryMap[tag];
   }
-  // Try partial substring match
   for (const tag of tags) {
     for (const key of Object.keys(categoryMap)) {
       if (tag.includes(key)) return categoryMap[key];
@@ -71,19 +98,24 @@ function mapIndustry(tags) {
   return 'other';
 }
 
+// Infer industry from raw title text (used when no tags are available).
+function inferIndustryFromTitle(title) {
+  for (const key of Object.keys(categoryMap)) {
+    if (title.includes(key)) return categoryMap[key];
+  }
+  return 'other';
+}
+
 // ---------------------------------------------------------------------------
 // Title parsers — extract structured info from raw post titles
 // ---------------------------------------------------------------------------
-
-// Extract salary/budget from title.
-// Patterns supported: $3000, 3000+, 2900-3600, 高达3600, 薪资可达$2300-2600
 function extractSalary(title) {
   const patterns = [
-    /\$?(\d{4,})\s*[-–~]\s*\$?(\d{4,})/, // range: 2900-3600
-    /高达\$?(\d{4,})/,                     // 高达3600
-    /薪资可达\$?(\d{4,})/,                 // 薪资可达$3000
-    /\$(\d{4,})\+?/,                      // $3000+
-    /(\d{4,})\+/,                          // 3600+
+    /\$?(\d{4,})\s*[-–~]\s*\$?(\d{4,})/,
+    /高达\$?(\d{4,})/,
+    /薪资可达\$?(\d{4,})/,
+    /\$(\d{4,})\+?/,
+    /(\d{4,})\+/,
   ];
 
   for (const pattern of patterns) {
@@ -99,7 +131,6 @@ function extractSalary(title) {
   return { min: 0, max: 0 };
 }
 
-// Extract company/shop name from title using common Chinese hiring patterns.
 function extractCompanyName(title) {
   const patterns = [
     /^(.{2,15}?)(?:聘请|招聘|诚招|诚聘|直招|需要|招)/,
@@ -119,7 +150,6 @@ function extractCompanyName(title) {
   return '';
 }
 
-// Infer location from Singapore place-name keywords mentioned in the title.
 function inferLocation(title) {
   const locationMap = {
     '兀兰': 'north', '义顺': 'north', '三巴旺': 'north', '杨厝港': 'north',
@@ -139,7 +169,7 @@ function inferLocation(title) {
 }
 
 // ---------------------------------------------------------------------------
-// Relative timestamp parser
+// Timestamp parsers
 // ---------------------------------------------------------------------------
 function parseRelativeTime(text) {
   const now = new Date();
@@ -166,8 +196,49 @@ function parseRelativeTime(text) {
     const months = parseInt(t, 10) || 0;
     return new Date(now.getTime() - months * 30 * 86400000).toISOString();
   }
-  // "置顶" (pinned) or anything unrecognised — assume "now"
   return now.toISOString();
+}
+
+// Parse Discuz-style timestamps:
+//   2026-6-10        (absolute date)
+//   2026-6-10 14:30  (absolute datetime)
+//   昨天 14:30      (yesterday)
+//   前天 09:15      (day before yesterday)
+//   半小时前        (relative)
+//   3 天前          (relative)
+function parseDiscuzTime(text) {
+  const now = new Date();
+  if (!text) return now.toISOString();
+  const t = String(text).trim();
+
+  // Absolute date e.g. 2026-6-10 or 2026-06-10 14:30
+  const absMatch = t.match(/(\d{4})-(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{1,2}))?/);
+  if (absMatch) {
+    const [, y, mo, d, hh, mm] = absMatch;
+    const dt = new Date(
+      Date.UTC(
+        parseInt(y, 10),
+        parseInt(mo, 10) - 1,
+        parseInt(d, 10),
+        hh ? parseInt(hh, 10) : 0,
+        mm ? parseInt(mm, 10) : 0
+      )
+    );
+    if (!Number.isNaN(dt.getTime())) return dt.toISOString();
+  }
+
+  if (t.includes('昨天')) {
+    return new Date(now.getTime() - 86400000).toISOString();
+  }
+  if (t.includes('前天')) {
+    return new Date(now.getTime() - 2 * 86400000).toISOString();
+  }
+  if (t.includes('半小时前')) {
+    return new Date(now.getTime() - 30 * 60000).toISOString();
+  }
+
+  // Fallback to relative parser
+  return parseRelativeTime(t);
 }
 
 // ---------------------------------------------------------------------------
@@ -196,36 +267,30 @@ async function fetchPage(url, attempt = 1) {
   }
 }
 
-// ---------------------------------------------------------------------------
-// Listing extraction
-// ---------------------------------------------------------------------------
-const POST_PATH_RE = /^\/(\d{6,})$/;
-const TAG_PATH_RE = /^\/c\d+\?/;
-const TIME_RE = /^(置顶|\d+\s*(分钟|小时|天|周|星期|月)前)$/;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// ---------------------------------------------------------------------------
+// Contact extraction (shared)
+// ---------------------------------------------------------------------------
 function extractContact($, $scope) {
-  // WhatsApp
   const waLink = $scope.find('a[href*="wa.me/"]').first();
   if (waLink.length) {
     const href = waLink.attr('href') || '';
     const m = href.match(/wa\.me\/(\+?\d+)/);
     if (m) return { contact: m[1], contact_type: 'whatsapp' };
   }
-  // SMS
   const smsLink = $scope.find('a[href^="sms:"]').first();
   if (smsLink.length) {
     const href = smsLink.attr('href') || '';
     const m = href.match(/sms:(\+?\d+)/);
     if (m) return { contact: m[1], contact_type: 'sms' };
   }
-  // tel:
   const telLink = $scope.find('a[href^="tel:"]').first();
   if (telLink.length) {
     const href = telLink.attr('href') || '';
     const m = href.match(/tel:(\+?\d+)/);
     if (m) return { contact: m[1], contact_type: 'phone' };
   }
-  // Bare number in text
   const text = $scope.text();
   const numMatch = text.match(/\+?65?\s*\d{4}\s*\d{4}/);
   if (numMatch) {
@@ -237,17 +302,17 @@ function extractContact($, $scope) {
   return { contact: '', contact_type: 'phone' };
 }
 
-/**
- * Parse a section page. We treat the page as a flat list of nodes where each
- * post is represented by a link to /<id>, optionally followed by tag links
- * and a relative timestamp.
- */
-function parseSection(html, type) {
+// ---------------------------------------------------------------------------
+// Parser: ShichengBBS / ShichengLuntan flat-link format
+// ---------------------------------------------------------------------------
+const POST_PATH_RE = /^\/(\d{6,})$/;
+const TAG_PATH_RE = /^\/c\d+\?/;
+
+function parseShichengSection(html, type) {
   const $ = cheerio.load(html);
   const posts = [];
   const seen = new Set();
 
-  // Find every link that points to /<digits>
   $('a').each((_, el) => {
     const $a = $(el);
     const href = $a.attr('href') || '';
@@ -260,26 +325,21 @@ function parseSection(html, type) {
     const title = $a.text().trim();
     if (!title) return;
 
-    // Walk forward through siblings within the same parent looking for
-    // tags, time, and contact info. Collect until we hit the next post link.
     const parent = $a.parent();
     const tags = [];
     let timeText = '';
     let contactInfo = { contact: '', contact_type: 'phone' };
 
-    // Scope: from the link to either the next post link or end of parent.
     const $following = $a.nextAll();
     const collected = [];
     $following.each((__, n) => {
       const $n = $(n);
       const nHref = ($n.is('a') ? $n.attr('href') : '') || '';
-      // Stop when we encounter another post link
       if (nHref && POST_PATH_RE.test(nHref)) return false;
       collected.push($n);
       return true;
     });
 
-    // Also look at parent-level following siblings for short distance
     if (collected.length < 2) {
       let $p = parent.next();
       let steps = 0;
@@ -297,7 +357,6 @@ function parseSection(html, type) {
     const $scope = $('<div></div>');
     collected.forEach(($n) => $scope.append($n.clone()));
 
-    // Extract tags
     $scope.find('a').each((__, t) => {
       const $t = $(t);
       const tHref = $t.attr('href') || '';
@@ -307,12 +366,10 @@ function parseSection(html, type) {
       }
     });
 
-    // Extract time text
     const scopeText = $scope.text();
     const timeMatch = scopeText.match(/(置顶|\d+\s*(分钟|小时|天|周|星期|月)前)/);
     if (timeMatch) timeText = timeMatch[1];
 
-    // Extract contact (within scope first, then on the link itself)
     contactInfo = extractContact($, $scope);
     if (!contactInfo.contact) {
       contactInfo = extractContact($, $a.parent());
@@ -324,9 +381,91 @@ function parseSection(html, type) {
       title,
       tags,
       timeText,
+      timeFormat: 'relative',
       contact: contactInfo.contact,
       contact_type: contactInfo.contact_type,
       type,
+      pathTemplate: `/${id}`,
+    });
+    return undefined;
+  });
+
+  return posts;
+}
+
+// ---------------------------------------------------------------------------
+// Parser: Discuz forum (ShichengBao)
+// ---------------------------------------------------------------------------
+const DISCUZ_THREAD_RE = /thread-(\d+)-\d+-\d+\.html/;
+
+function parseDiscuzSection(html, type) {
+  const $ = cheerio.load(html);
+  const posts = [];
+  const seen = new Set();
+
+  $('a').each((_, el) => {
+    const $a = $(el);
+    const href = $a.attr('href') || '';
+    const m = href.match(DISCUZ_THREAD_RE);
+    if (!m) return;
+
+    const id = m[1];
+    if (seen.has(id)) return;
+
+    const title = $a.text().trim();
+    // Discuz listings use multiple thread links per row (subject + comment shortcut).
+    // Skip non-title entries (digits-only, very short, generic labels).
+    if (!title || title.length < 4) return;
+    if (/^\d+$/.test(title)) return;
+    if (/^(回复|查看|新窗|New)$/i.test(title)) return;
+
+    // Walk up to find the row container holding the post metadata
+    let $row = $a.closest('tbody');
+    if (!$row.length) $row = $a.closest('tr');
+    if (!$row.length) $row = $a.parent().parent();
+
+    const tags = [];
+    // Discuz prefixes a category in [brackets] inside the title cell, e.g. [餐饮]
+    const titleCell = $a.closest('th, td');
+    if (titleCell.length) {
+      const cellText = titleCell.text();
+      const tagMatches = cellText.match(/\[([^\[\]]{1,12})\]/g);
+      if (tagMatches) {
+        for (const tm of tagMatches) {
+          const inner = tm.slice(1, -1).trim();
+          if (inner && !tags.includes(inner)) tags.push(inner);
+        }
+      }
+      // Look for explicit `<a class="xi1">tag</a>` style anchors
+      titleCell.find('a').each((__, t) => {
+        const $t = $(t);
+        const tHref = $t.attr('href') || '';
+        if (/typeid=/.test(tHref) || /forum-\d+-\d+\.html/.test(tHref)) {
+          const txt = $t.text().trim().replace(/^\[|\]$/g, '');
+          if (txt && txt.length <= 12 && !tags.includes(txt)) tags.push(txt);
+        }
+      });
+    }
+
+    // Extract date — Discuz typically renders date in `<em>` or `.by` columns.
+    let timeText = '';
+    const rowText = $row.text();
+    const dateMatch = rowText.match(
+      /(?:昨天|前天)\s*\d{1,2}:\d{1,2}|半小时前|\d+\s*(?:分钟|小时|天)前|\d{4}-\d{1,2}-\d{1,2}(?:\s+\d{1,2}:\d{1,2})?/
+    );
+    if (dateMatch) timeText = dateMatch[0];
+
+    seen.add(id);
+    posts.push({
+      id,
+      title,
+      tags,
+      timeText,
+      timeFormat: 'discuz',
+      contact: '',
+      contact_type: 'phone',
+      type,
+      pathTemplate: `/thread-${id}-1-1.html`,
     });
     return undefined;
   });
@@ -337,20 +476,25 @@ function parseSection(html, type) {
 // ---------------------------------------------------------------------------
 // Listing -> ScrapedListing transformation
 // ---------------------------------------------------------------------------
-function buildListing(raw, scrapedAt) {
-  const posted_at = parseRelativeTime(raw.timeText);
-  const industry = mapIndustry(raw.tags);
-  const sourceUrl = `${SOURCE_BASE}/${raw.id}`;
+function buildListing(raw, source, scrapedAt) {
+  const posted_at =
+    raw.timeFormat === 'discuz'
+      ? parseDiscuzTime(raw.timeText)
+      : parseRelativeTime(raw.timeText);
+  const industry = raw.tags.length
+    ? mapIndustry(raw.tags)
+    : inferIndustryFromTitle(raw.title);
+  const sourceUrl = `${source.baseUrl}${raw.pathTemplate}`;
 
   const base = {
-    id: raw.id,
+    id: `${source.platform}-${raw.id}`,
     title: raw.title,
     industry,
     tags: raw.tags,
     contact: raw.contact,
     contact_type: raw.contact_type,
     source_url: sourceUrl,
-    source_platform: SOURCE_PLATFORM,
+    source_platform: source.platform,
     posted_at,
     scraped_at: scrapedAt,
     type: raw.type,
@@ -388,36 +532,45 @@ function buildListing(raw, scrapedAt) {
 }
 
 // ---------------------------------------------------------------------------
-// Main scrape loop
+// Per-source scraping
 // ---------------------------------------------------------------------------
-async function scrapeSection(section, scrapedAt) {
+function selectParser(name) {
+  if (name === 'discuz') return parseDiscuzSection;
+  return parseShichengSection;
+}
+
+async function scrapeSourcePaths(source, paths, type, scrapedAt) {
+  const parser = selectParser(source.parser);
   const all = [];
   const seen = new Set();
+  let pageCount = 0;
 
-  for (let page = 1; page <= PAGES_PER_SECTION; page += 1) {
-    const url =
-      page === 1
-        ? `${SOURCE_BASE}/${section.slug}`
-        : `${SOURCE_BASE}/${section.slug}?page=${page}`;
+  for (const p of paths) {
+    const url = `${source.baseUrl}${p}`;
     try {
       console.log(`[fetch] ${url}`);
       const html = await fetchPage(url);
-      const raw = parseSection(html, section.type);
+      const raw = parser(html, type);
       console.log(`  -> ${raw.length} posts`);
+      pageCount += 1;
       for (const r of raw) {
         if (seen.has(r.id)) continue;
         seen.add(r.id);
         all.push(r);
       }
     } catch (err) {
-      console.error(`[error] failed to load ${url}: ${err.message}`);
-      // Continue with the remaining pages
+      console.warn(`[warn] ${source.name} failed to load ${url}: ${err.message}`);
     }
+    await sleep(REQUEST_DELAY_MS);
+  }
+
+  if (pageCount === 0) {
+    console.warn(`[warn] ${source.name}: no pages fetched for ${type}`);
   }
 
   const now = Date.now();
   const listings = all
-    .map((r) => buildListing(r, scrapedAt))
+    .map((r) => buildListing(r, source, scrapedAt))
     .filter((l) => {
       const ts = new Date(l.posted_at).getTime();
       return Number.isFinite(ts) && now - ts <= FRESHNESS_MS;
@@ -426,10 +579,58 @@ async function scrapeSection(section, scrapedAt) {
   return listings;
 }
 
-async function writeOutput(filename, scrapedAt, listings) {
+async function scrapeSource(source, scrapedAt) {
+  console.log(`\n[source] ${source.name} (${source.baseUrl})`);
+  const employerListings = source.employerPaths.length
+    ? await scrapeSourcePaths(source, source.employerPaths, 'employer', scrapedAt)
+    : [];
+  const seekerListings = source.seekerPaths.length
+    ? await scrapeSourcePaths(source, source.seekerPaths, 'seeker', scrapedAt)
+    : [];
+
+  console.log(
+    `[source] ${source.name}: ${employerListings.length} employer / ${seekerListings.length} seeker (post-freshness)`
+  );
+
+  return { employer: employerListings, seeker: seekerListings };
+}
+
+// ---------------------------------------------------------------------------
+// Cross-source deduplication
+// ---------------------------------------------------------------------------
+function normalizeForHash(text) {
+  return String(text || '')
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ' ');
+}
+
+function dedupeListings(listings) {
+  const seen = new Set();
+  const out = [];
+  let dropped = 0;
+  for (const l of listings) {
+    const key = `${normalizeForHash(l.title)}|${normalizeForHash(l.contact)}`;
+    if (seen.has(key)) {
+      dropped += 1;
+      continue;
+    }
+    seen.add(key);
+    out.push(l);
+  }
+  if (dropped > 0) {
+    console.log(`[dedupe] dropped ${dropped} duplicate listings`);
+  }
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// Output
+// ---------------------------------------------------------------------------
+async function writeOutput(filename, scrapedAt, listings, sources) {
   const payload = {
     scraped_at: scrapedAt,
-    source: SOURCE_BASE,
+    sources: sources.map((s) => ({ name: s.platform, base_url: s.baseUrl })),
     total_count: listings.length,
     listings,
   };
@@ -439,20 +640,54 @@ async function writeOutput(filename, scrapedAt, listings) {
   console.log(`[write] ${outPath} (${listings.length} listings)`);
 }
 
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
 async function main() {
   const scrapedAt = new Date().toISOString();
   console.log(`[start] scrape at ${scrapedAt}`);
 
-  for (const section of SECTIONS) {
+  const employersAll = [];
+  const seekersAll = [];
+  const perSourceCount = [];
+
+  for (const source of SOURCES) {
     try {
-      const listings = await scrapeSection(section, scrapedAt);
-      const file = section.type === 'employer' ? 'employers.json' : 'seekers.json';
-      await writeOutput(file, scrapedAt, listings);
+      const { employer, seeker } = await scrapeSource(source, scrapedAt);
+      employersAll.push(...employer);
+      seekersAll.push(...seeker);
+      perSourceCount.push({
+        name: source.name,
+        employer: employer.length,
+        seeker: seeker.length,
+      });
     } catch (err) {
-      console.error(`[error] section ${section.slug} failed: ${err.message}`);
+      console.warn(`[warn] source ${source.name} failed: ${err.message}`);
+      perSourceCount.push({
+        name: source.name,
+        employer: 0,
+        seeker: 0,
+        error: err.message,
+      });
     }
   }
 
+  const employersDeduped = dedupeListings(employersAll);
+  const seekersDeduped = dedupeListings(seekersAll);
+
+  await writeOutput('employers.json', scrapedAt, employersDeduped, SOURCES);
+  await writeOutput('seekers.json', scrapedAt, seekersDeduped, SOURCES);
+
+  console.log('\n[summary] per-source counts:');
+  for (const c of perSourceCount) {
+    const errPart = c.error ? ` ERROR: ${c.error}` : '';
+    console.log(
+      `  - ${c.name}: ${c.employer} employer / ${c.seeker} seeker${errPart}`
+    );
+  }
+  console.log(
+    `[summary] combined (after dedupe): ${employersDeduped.length} employer / ${seekersDeduped.length} seeker`
+  );
   console.log('[done]');
 }
 
