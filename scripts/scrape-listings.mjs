@@ -7,8 +7,8 @@
  *  - Job seeker listings: https://www.shichengbbs.com/c441 (狮城求职)
  *
  * Outputs:
- *  - data/employers.json
- *  - data/seekers.json
+ *  - public/data/employers.json
+ *  - public/data/seekers.json
  *
  * Run: `node scripts/scrape-listings.mjs`
  */
@@ -21,7 +21,7 @@ import * as cheerio from 'cheerio';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
-const DATA_DIR = path.join(ROOT, 'data');
+const DATA_DIR = path.join(ROOT, 'public', 'data');
 
 const SOURCE_BASE = 'https://www.shichengbbs.com';
 const SOURCE_PLATFORM = 'ShichengBBS';
